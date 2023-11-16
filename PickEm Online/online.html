@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pick Em!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Pick Em!</h1>
+  <div id="output"></div>
+  <div id="authSection">
+    <h2>Admin Controls</h2>
+    <input type="password" id="sitePassword" placeholder="Mikey is not allowed...">
+    <button onclick="authenticate()">Authenticate</button>
+  </div>
+  <div id="removeTeamSection" style="display: none;">
+    <h2>Remove Team</h2>
+    <label for="playerName">Player Name:</label>
+    <select id="playerName"></select>
+    <label for="teamToRemove">Team to Remove:</label>
+    <select id="teamToRemove"></select>
+    <button onclick="removeTeam()">Remove Team</button>
+  </div>
+  <div id="addPointSection" style="display: none;">
+    <h2>Add Point</h2>
+    <label for="playerToAddPoint">Player Name:</label>
+    <select id="playerToAddPoint"></select>
+    <button onclick="addPoint()">Add Point</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

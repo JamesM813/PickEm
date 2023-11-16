@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a59f9f;
+  background-size: auto;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: navy;
+}
+
+h1, h2 {
+  color: rgb(255, 0, 89);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 0, 89);
+  text-align: center;
+  text-shadow: -1px -1px 0 black,  
+               1px -1px 0 black,
+              -1px 1px 0 black,
+               1px 1px 0 black; /* Black outline */
+}
+
+h2 {
+  color: rgb(255, 0, 89);
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 0px; /* Move the header higher */
+  text-shadow: -1px -1px 0 black,  
+               1px -1px 0 black,
+              -1px 1px 0 black,
+               1px 1px 0 black; /* Black outline */
+}
+/* Output box styles */
+#output {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 5px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 10px;
+
+}
+
+/* Button styles */
+button {
+  padding: 8px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Leaderboard entry styles */
+.leaderboard-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: violet;
+  text-align: left;
+  font-size: xx-large;
+
+}
+
+.leaderboard-entry span {
+  display: flex;
+  align-items: center;
+  text-shadow: -1px -1px 0 black,  
+               1px -1px 0 black,
+              -1px 1px 0 black,
+               1px 1px 0 black; 
+}
+
+/* Styles for name and points */
+.leaderboard-entry span:nth-child(2),
+.leaderboard-entry span:nth-child(3) {
+  min-width: 120px;
+}
+
+.leaderboard-entry span:nth-child(2) {
+  justify-content: flex-start;
+  margin-right: 10px;
+}
+
+.leaderboard-entry span:nth-child(3) {
+  justify-content: flex-end;
+}
+
+/* Styles for leaderboard entry button */
+.leaderboard-entry button {
+  padding:20px 28px;
+  background-color: rgba(116, 116, 116, 0.60);
+  color: pink;
+  font-size: large;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.leaderboard-entry button:hover {
+  background-color: #0056b3;
+}
